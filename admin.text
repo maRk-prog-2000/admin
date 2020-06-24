@@ -1,0 +1,106 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+//// Valid access levels are as follows													 
+////		startvote - not used														 
+////		changemap																	 
+////		pause - Pause server gameplay												 
+////		cheat - Use server cheat commands											 
+////		private	- Password protect server											 
+////		balance	- Group Ignores server team balance										 
+////		chat - Admin chat and Server broadcast										 
+////		kick																		 
+////		ban																		  	 
+////		config - Change server config												 
+////		cameraman - Admin spectate mode												 
+////		immunity - Cannot be kicked / banned										 
+////		manageserver - Shutdown server												 
+////		featuretest - Any features added for testing by dev team					 
+////		reserve - Reserve slot														 
+////		demos - Record Demos (not working)											 
+////		debug - show admin stats command and other debugging info		
+////		teamchange - No timer limits on team change			 
+////		forceteamchange - Can issue the ForceTeamChange command
+////		canseeadminchat - This group can see the admin chat and teamkill/admin-join notifications
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//		The Format for adding groups is:
+//	Group=<Group Name>:<Permission 1>,<Permission 2>,<Permission 3>
+//
+//		For example:
+//	Group=MyGroup: pause, demos, changemap
+//
+//		The groups below are the defaults, add to or change them as needed:
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+Group=Admin:kick,ban,changemap,cameraman,reserve,teamchange,forcechange,startvote,cheat,balance,immunity,chat
+Group=Moderator:kick,ban,slot,changemap,reserve,teamchange,forcechange,cameraman,chat
+Group=Moderatortest:kick,ban,slot,changemap,reserve,teamchange,forcechange,chat
+Group=Whitelist:reserve
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//		The format for adding admins is:
+//	Admin=<Steam ID #>:<Group Name>
+//
+//		For example:
+//	Admin=123456:Admin		// Adam the admin
+//	Admin=654321:Moderator	// Molly the moderator
+//
+//  Add your own below:
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+Admin=123456:Admin		// Adam the admin
+Admin=76561198090125231:Admin	// amyza
+Admin=76561198198255933:Moderator	// LULU 
+Admin=76561198166056329:Admin	// MArk
+Admin=76561198963498405:Admin	// Eddy
+Admin=76561198138420974:Admin	// Percy
+Admin=76561197999467819:Admin	// baba  
+Admin=76561198271389133:Moderator	// Warhammer 
+Admin=76561198026169727:Moderator	//rip
+Admin=76561198164163896:Moderatortest	//Ikra
+Admin=76561198348004477:Moderator       // Madeuf
+Admin=76561198200542247:Moderator       // Madeuf
+Admin=76561198142590630:Admin // Razmo
+Admin=76561198086915478:Whitelist // ? Limide
+Admin=76561198015213477:Whitelist // ? Bigbob
+Admin=76561198173944065:Whitelist // ? Deltyh
+Admin=76561198095314392:Whitelist // ? Kyoka
+Admin=76561198201276721:Whitelist // ? Tarpin
+Admin=76561198172100170:Whitelist // ? Rafile
+Admin=76561198151799124:Whitelist // ? Jack
+Admin=76561198139152163:Whitelist // ? Unfazer
+Admin=76561198032129728:Whitelist // ? Room5
+Admin=76561198135700326:Whitelist // ? Bouli
+Admin=76561198103288295:Whitelist // ? Edwin
+Admin=76561198000459311:Whitelist // ? 3010x
+Admin=76561197960830580:Whitelist // ? Sponk
+Admin=76561198091451041:Whitelist // ? PP Very
+Admin=76561198121775831:Whitelist // ? Vlad
+Admin=76561198066624641:Whitelist // ? Impure
+Admin=76561198056684089:Whitelist // ? Twix
+Admin=76561197968581906:Whitelist // LCB Bot existence is pain
+Admin=76561198147120186:Whitelist // LCB Dolgarinn
+Admin=76561198062804789:Whitelist // LCB Tommy
+Admin=76561198125506361:Whitelist // LCB Sixelav
+Admin=76561197968581906:Whitelist // LCB Rann
+Admin=76561198066211352:Whitelist // LCB Proseche
+Admin=76561198129498806:Whitelist // 1st Alexei Blade
+Admin=76561197996939780:Whitelist // 1st Asla
+Admin=76561198052355361:Whitelist // 1st Sgt_Thandor|FR|
+Admin=76561198800763223:Whitelist // 1st Skyes
+Admin=76561197985968536:Whitelist // 1st Malakai
+Admin=76561198016592202:Whitelist // 1st Lony
+Admin=76561198134155717:Whitelist // 1st X-RAY
+Admin=76561198064695864:Whitelist // 1st Kev
+Admin=76561197998662550:Whitelist // 1st Ithar
+Admin=76561198924806357:Whitelist // 1st Auzyy
+Admin=76561197993084892:Whitelist // 1st Bucheron
+Admin=76561198026145510:Whitelist // 1st Cerbere
+Admin=76561198035444713:Whitelist // 1st Fluffy Princess
+Admin=76561197993352823:Whitelist // 1st Nawabo
+Admin=76561198165218846:Whitelist // 1st Neo Saladin
+Admin=76561198144655350:Whitelist // 1st Overlord
+Admin=76561198130897074:Whitelist // 1st Yami
+Admin=76561198309487889:Whitelist // 1st KMD
+Admin=76561198197603150:Whitelist // 1st 21
+Admin=76561198046066348:Whitelist // 1st Zombie
